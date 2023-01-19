@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">KYAD - Weekly Deal</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="admin">Admin</string>
+    <string name="admin_login">Admin Login</string>
+    <string name="username">UserName</string>
+    <string name="enter_username">Enter username</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter password</string>
+    <string name="submit">Submit</string>
+    <string name="security_code">Security Code</string>
+    <string name="eg_10_2_digit">eg. 10 (2 digit)</string>
+    <string name="store_name">Store Name</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="logo">Logo</string>
+    <string name="Description">Description</string>
+    <string name="dealtype">Deal Type</string>
+    <string name="eg_bestdeals">Best Deals</string>
+    <string name="eg_newedeals">New Deals</string>
+    <string name="stores">Stores</string>
+    <string name="producttype">Product Type</string>
+    <string name="eg_Groceries">Groceries</string>
+    <string name="title_activity_browse">Browse</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_lists">Lists</string>
+    <string name="browse">Browse</string>
+    <string name="search">Search</string>
+    <string name="lists">Lists</string>
+    <string name="favorite">Favorite</string>
+    <string name="shopping_list">Shopping List</string>
+    <string name="image">Image</string>
+    <string name="product_name">Product Name</string>
+    <string name="enter_product_name">Enter product name</string>
+    <string name="discount_in">Discount in %</string>
+    <string name="enter_discount_eg_10">Enter discount eg.10</string>
+    <string name="discount">Discount</string>
+</resources>

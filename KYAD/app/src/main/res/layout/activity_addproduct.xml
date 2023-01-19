@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/primaryLite"
+            android:elevation="3dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="Add Deal"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="82dp"
+                        android:layout_height="42dp"
+                        android:gravity="center|start"
+                        android:text="@string/store_name"
+                        android:textColor="@color/black" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/input"
+                        android:paddingHorizontal="2dp"
+                        android:paddingStart="10dp"
+                        tools:ignore="RtlSymmetry">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/storeName"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="82dp"
+                        android:layout_height="40dp"
+                        android:gravity="center|start"
+                        android:text="@string/product_name"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/productName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/input"
+                        android:ems="10"
+                        android:hint="@string/enter_product_name"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:paddingHorizontal="2dp"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="82dp"
+                        android:layout_height="40dp"
+                        android:gravity="center|start"
+                        android:text="@string/discount_in"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/discount"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/input"
+                        android:ems="10"
+                        android:hint="@string/enter_discount_eg_10"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:paddingHorizontal="2dp"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="82dp"
+                        android:layout_height="40dp"
+                        android:gravity="center|start"
+                        android:text="@string/start_date"
+                        android:textColor="@color/black" />
+
+
+                    <TextView
+                        android:id="@+id/startDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/input"
+                        android:drawableStart="@android:drawable/ic_menu_my_calendar"
+                        android:gravity="center|start"
+                        android:paddingHorizontal="2dp"
+                        android:paddingStart="10dp"
+                        android:text="Select date" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="82dp"
+                        android:layout_height="40dp"
+                        android:gravity="center|start"
+                        android:text="@string/end_date"
+                        android:textColor="@color/black" />
+
+
+                    <TextView
+                        android:id="@+id/endDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/input"
+                        android:drawableStart="@android:drawable/ic_menu_my_calendar"
+                        android:gravity="center|start"
+                        android:paddingHorizontal="2dp"
+                        android:paddingStart="10dp"
+                        android:text="Select date" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="82dp"
+                        android:layout_height="40dp"
+                        android:gravity="center|start"
+                        android:text="@string/image"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/image"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/input"
+                        android:ems="10"
+                        android:hint="Enter image link"
+                        android:importantForAutofill="no"
+                        android:inputType="textUri"
+                        android:paddingHorizontal="2dp"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="83dp"
+                        android:layout_height="40dp"
+                        android:gravity="center|start"
+                        android:text="@string/Description"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="40pt"
+                        android:background="@drawable/input"
+                        android:ems="10"
+                        android:hint="@string/Description"
+                        android:importantForAutofill="no"
+                        android:inputType="textLongMessage"
+                        android:paddingHorizontal="2dp"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/black"
+                        tools:ignore="RtlSymmetry" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="82dp"
+                        android:layout_height="42dp"
+                        android:gravity="center|start"
+                        android:text="@string/dealtype"
+                        android:textColor="@color/black" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/input"
+                        android:paddingHorizontal="2dp"
+                        android:paddingStart="10dp"
+                        tools:ignore="RtlSymmetry">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/dealTypeSP"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="82dp"
+                        android:layout_height="42dp"
+                        android:gravity="center|start"
+                        android:text="@string/producttype"
+                        android:textColor="@color/black" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/input"
+                        android:paddingHorizontal="2dp"
+                        android:paddingStart="10dp"
+                        tools:ignore="RtlSymmetry">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/productTypeSP"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:backgroundTint="@color/black"
+                    android:text="@string/submit" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
